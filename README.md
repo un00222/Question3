@@ -11,16 +11,16 @@ alphabet = " !.abcdefghijklmnopqrstuvwxyz"
 29 characters 
 
 1. About how many questions do you estimate are needed to type the sentence using linear search?
-  => If I were to use linear search and go character by character, I would on average 15 questions per letter in case the character is in the middle of the alphabet. It would be 29 questions in the worst-case scenario if the characters were at the end. 
-We have 71 letters in the sentences and 14 (each space between words).
-Average case: 15 * (71+14) = 1275 questions
-Worst case: 29 * (71+14) = 2465 questions
+  => If I were to use linear search and go character by character, I would on average 15 questions per character in case the character is in the middle of the alphabet. It would be 29 questions in the worst-case scenario if the characters were at the end. 
+  We have 71 characters in the sentences and 14 (each space between words).
+  Average case: 15 * (71+14) = 1275 questions
+  Worst case: 29 * (71+14) = 2465 questions
 
 2. About how many questions do you estimate are to type the sentence using binary search?
    => In binary search, I divide the search space in half until I find the target. 
    Given the alphabet of length 29, I would need around 5 questions per letter
    Level of binary: log2(N) => log2(29) = 5
-   => Average and Worse Case :  (71+14) * 5 = 425
+   Average and Worse Case :  (71+14) * 5 = 425
   
 3. If you were Jean-Domininque, which program would you rather use?
    => If I were Jean-Dominique, I would choose the Binary Search approach as it drastically reduces the number of questions to determine the characters in the sentence.
